@@ -36,6 +36,12 @@ draw_text(_bar_x + _bar_w + 10, _guilt_y - 2, "GUILT: " + string(global.guilt));
 
 
 // guilt visibal overlays
+if (global.guilt >= 1) {
+    draw_set_alpha(0.2); 
+    draw_set_color(c_black); 
+    draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
+    draw_set_alpha(1.0); 
+}
 if (global.guilt >= 2 && global.guilt <= 3) {
     // medium- make cleaner later
     draw_set_color(c_black);

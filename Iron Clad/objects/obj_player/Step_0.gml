@@ -26,3 +26,19 @@ if (_hmove != 0 || _vmove != 0) {
         }
     }
 }
+if (keyboard_check_pressed(vk_space)) {
+    with (obj_sword) {
+        image_angle += 45;
+    }
+}
+if (player_hit_cooldown > 0) {
+    player_hit_cooldown--;
+}
+if (player_hit_cooldown > 0) {
+    player_hit_cooldown--;
+}
+if (player_hit_cooldown > 120 - 12) {
+    image_blend = c_red;
+} else {
+    image_blend = c_white;
+}
