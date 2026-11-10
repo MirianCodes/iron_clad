@@ -1,0 +1,24 @@
+{
+  "$GMPath":"",
+  "%Name":"path_entity_tutorial",
+  "closed":true,
+  "kind":0,
+  "name":"path_entity_tutorial",
+  "parent":{
+    "name":"Iron Clad",
+    "path":"Iron Clad.yyp",
+  },
+  "points":[
+    {"speed":100.0,"x":561.0,"y":255.0,},
+    {"speed":100.0,"x":528.0,"y":122.667816,},
+    {"speed":100.0,"x":930.5854,"y":90.08243,},
+    {"speed":100.0,"x":1341.0,"y":110.0,},
+    {"speed":100.0,"x":1495.0,"y":434.0,},
+    {"speed":100.0,"x":1132.0,"y":204.0,},
+    {"speed":100.0,"x":787.36584,"y":271.7317,},
+    {"speed":100.0,"x":639.11163,"y":269.9533,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
