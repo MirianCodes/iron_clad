@@ -58,3 +58,18 @@ if (global.guilt >= 2 && global.guilt <= 3) {
     draw_circle(_w/2, _h/2, 220, false);
     draw_set_alpha(1.0);
 }
+var is_guilty_visual = (global.guilt >= 1) || (global.forced_guilt_timer > 0);
+
+if (global.forced_guilt_timer > 0) {
+    global.forced_guilt_timer--;
+}
+
+if (is_guilty_visual) {
+    // guilt trip for wheel
+    var overlay_alpha = (global.forced_guilt_timer > 0) ? 0.35 : 0.12;
+
+    draw_set_alpha(overlay_alpha);
+    draw_set_color(c_black);
+    draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
+    draw_set_alpha(1.0);
+}

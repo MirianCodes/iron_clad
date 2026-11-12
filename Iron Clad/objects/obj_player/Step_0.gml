@@ -42,3 +42,8 @@ if (player_hit_cooldown > 120 - 12) {
 } else {
     image_blend = c_white;
 }
+var current_speed = global.player_speed;
+if (global.speed_boost_timer > 0) {
+    global.speed_boost_timer--;
+    current_speed *= 1.5; // 50% speed increase for wheel
+}

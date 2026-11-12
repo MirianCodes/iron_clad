@@ -18,6 +18,7 @@
     {"name":"inst_5C9544EB","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_3FE39252","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2F531C6E","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_390F6B95","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -35,6 +36,7 @@
         {"$GMRInstance":"v4","%Name":"inst_5C9544EB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5C9544EB","objectId":{"name":"obj_tutorial_challenge","path":"objects/obj_tutorial_challenge/obj_tutorial_challenge.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.53125,"scaleY":3.578125,"x":1355.4316,"y":89.0,},
         {"$GMRInstance":"v4","%Name":"inst_3FE39252","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3FE39252","objectId":{"name":"obj_tutorial_gate","path":"objects/obj_tutorial_gate/obj_tutorial_gate.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.703125,"scaleY":4.5213156,"x":1811.0,"y":720.53503,},
         {"$GMRInstance":"v4","%Name":"inst_2F531C6E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2F531C6E","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.75,"scaleY":2.5,"x":768.0,"y":896.0,},
+        {"$GMRInstance":"v4","%Name":"inst_390F6B95","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_390F6B95","objectId":{"name":"obj_wheelcheckpointstone","path":"objects/obj_wheelcheckpointstone/obj_wheelcheckpointstone.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.21875,"scaleY":2.515625,"x":329.0,"y":668.1433,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"ground","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ground","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":17,"SerialiseWidth":30,"TileCompressedData":[
           -5,5,-9,347,-2,346,-4,490,6,146,147,148,149,150,346,-4,490,-10,347,5,75,76,77,78,346,-5,490,6,178,179,

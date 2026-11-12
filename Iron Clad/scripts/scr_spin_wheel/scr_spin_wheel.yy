@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_spin_wheel",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_spin_wheel",
+  "parent":{
+    "name":"Iron Clad",
+    "path":"Iron Clad.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
