@@ -6,8 +6,8 @@
   "name":"obj_tutorial_challenge",
   "overriddenProperties":[],
   "parent":{
-    "name":"Iron Clad",
-    "path":"Iron Clad.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

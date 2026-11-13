@@ -1,7 +1,11 @@
-function scr_spin_wheel() {
-    var _roll = irandom_range(1, 5);
+///@param {Real}  
+function scr_spin_wheel(outcome) {
+	if(outcome == 360){
+		outcome = 0;
+	}
+    var _roll = outcome div 60;
 
-    switch (_roll) {
+    switch (_roll + 1) {
         case 1: // Kings blessing
             global.double_damage_timer = 1800; 
             break;
@@ -26,5 +30,8 @@ function scr_spin_wheel() {
             global.forced_guilt_timer = 1800; // 30 seconds of extreme guilt overlay
             //add dialogue
             break;
+			
+			case 6: //Extra
+			   break;
     }
 }
