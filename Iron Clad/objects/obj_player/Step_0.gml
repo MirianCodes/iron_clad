@@ -1,3 +1,6 @@
+// Pause player movement while dialogue is open
+if (instance_exists(obj_dialogue)) exit;
+
 // --- Speed (with boost) ---
 var current_speed = variable_global_exists("player_speed") ? global.player_speed : 3;
 if (global.speed_boost_timer > 0) {
