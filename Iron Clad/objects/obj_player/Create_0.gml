@@ -1,1 +1,0 @@
-player_hit_cooldown = 0;
