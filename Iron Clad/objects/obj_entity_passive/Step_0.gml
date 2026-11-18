@@ -1,3 +1,10 @@
+// Pause entity movement and attacks while dialogue is playing
+if (instance_exists(obj_dialogue)) {
+    speed = 0;
+    path_speed = 0;
+    exit;
+}
+
 if (hit_cooldown > 0) {
     hit_cooldown--;
 }
