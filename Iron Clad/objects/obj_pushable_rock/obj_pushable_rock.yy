@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tutorial_challenge",
+  "%Name":"obj_pushable_rock",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_tutorial_challenge",
+  "name":"obj_pushable_rock",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tutorial_challenge",
-    "path":"sprites/spr_tutorial_challenge/spr_tutorial_challenge.yy",
+    "name":"spr_pushable_rock",
+    "path":"sprites/spr_pushable_rock/spr_pushable_rock.yy",
   },
   "spriteMaskId":null,
   "visible":true,

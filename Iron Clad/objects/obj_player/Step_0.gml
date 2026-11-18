@@ -18,11 +18,12 @@ if (_hmove != 0 || _vmove != 0) {
     var _yspd = lengthdir_y(current_speed, _dir);
 
     // --- Horizontal movement & Rock Pushing ---
-    var _rock_h = instance_place(x + _xspd, y, obj_tutorial_challenge);
+    var _rock_h = instance_place(x + _xspd, y, obj_pushable_rock);
     if (_rock_h != noone) {
         var _push_x = sign(_xspd) * _rock_h.push_speed;
+        var _rock_gate_h = instance_place(_rock_h.x + _push_x, _rock_h.y, obj_tutorial_gate);
         if (!place_meeting(_rock_h.x + _push_x, _rock_h.y, obj_wall) && 
-            !place_meeting(_rock_h.x + _push_x, _rock_h.y, obj_tutorial_gate)) {
+            (_rock_gate_h == noone || _rock_gate_h.is_open)) {
             _rock_h.x += _push_x;
             _xspd = _push_x; // Match player speed to the heavy push speed
         } else {
@@ -30,20 +31,24 @@ if (_hmove != 0 || _vmove != 0) {
         }
     }
 
-    if (!place_meeting(x + _xspd, y, obj_wall)) {
+    var _gate_h = instance_place(x + _xspd, y, obj_tutorial_gate);
+    if (!place_meeting(x + _xspd, y, obj_wall) && (_gate_h == noone || _gate_h.is_open)) {
         x += _xspd;
     } else {
         while (!place_meeting(x + sign(_xspd), y, obj_wall)) {
+            var _step_gate_h = instance_place(x + sign(_xspd), y, obj_tutorial_gate);
+            if (_step_gate_h != noone && !_step_gate_h.is_open) break;
             x += sign(_xspd);
         }
     }
 
     // --- Vertical movement & Rock Pushing ---
-    var _rock_v = instance_place(x, y + _yspd, obj_tutorial_challenge);
+    var _rock_v = instance_place(x, y + _yspd, obj_pushable_rock);
     if (_rock_v != noone) {
         var _push_y = sign(_yspd) * _rock_v.push_speed;
+        var _rock_gate_v = instance_place(_rock_v.x, _rock_v.y + _push_y, obj_tutorial_gate);
         if (!place_meeting(_rock_v.x, _rock_v.y + _push_y, obj_wall) && 
-            !place_meeting(_rock_v.x, _rock_v.y + _push_y, obj_tutorial_gate)) {
+            (_rock_gate_v == noone || _rock_gate_v.is_open)) {
             _rock_v.y += _push_y;
             _yspd = _push_y; // Match player speed to the heavy push speed
         } else {
@@ -51,10 +56,13 @@ if (_hmove != 0 || _vmove != 0) {
         }
     }
 
-    if (!place_meeting(x, y + _yspd, obj_wall)) {
+    var _gate_v = instance_place(x, y + _yspd, obj_tutorial_gate);
+    if (!place_meeting(x, y + _yspd, obj_wall) && (_gate_v == noone || _gate_v.is_open)) {
         y += _yspd;
     } else {
         while (!place_meeting(x, y + sign(_yspd), obj_wall)) {
+            var _step_gate_v = instance_place(x, y + sign(_yspd), obj_tutorial_gate);
+            if (_step_gate_v != noone && !_step_gate_v.is_open) break;
             y += sign(_yspd);
         }
     }

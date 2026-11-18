@@ -1,4 +1,4 @@
-is_pressed = place_meeting(x, y, obj_tutorial_challenge) || place_meeting(x, y, obj_player);
+is_pressed = place_meeting(x, y, obj_pushable_rock) || place_meeting(x, y, obj_player);
 
 // Trigger gate state change only when pressure changes
 if (is_pressed != was_pressed) {
