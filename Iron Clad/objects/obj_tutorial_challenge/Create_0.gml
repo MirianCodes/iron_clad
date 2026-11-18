@@ -1,0 +1,1 @@
+push_speed = 2; //heavy rock, slower push speed.

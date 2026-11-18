@@ -42,7 +42,7 @@ function scr_spin_wheel(outcome) {
             global.player_hp = max(0, global.player_hp - 1);
             _lines = [
                 "* BLOOD CURSE!",
-                "* The wheel demands a crimson toll. Pain sears through your chest—you lost 1 HP!"
+                "* The wheel demands a crimson toll. Pain sears through your chest, you lost 1 HP!"
             ];
             break;
             

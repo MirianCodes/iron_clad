@@ -17,7 +17,19 @@ if (_hmove != 0 || _vmove != 0) {
     var _xspd = lengthdir_x(current_speed, _dir);
     var _yspd = lengthdir_y(current_speed, _dir);
 
-    // Horizontal movement
+    // --- Horizontal movement & Rock Pushing ---
+    var _rock_h = instance_place(x + _xspd, y, obj_tutorial_challenge);
+    if (_rock_h != noone) {
+        var _push_x = sign(_xspd) * _rock_h.push_speed;
+        if (!place_meeting(_rock_h.x + _push_x, _rock_h.y, obj_wall) && 
+            !place_meeting(_rock_h.x + _push_x, _rock_h.y, obj_tutorial_gate)) {
+            _rock_h.x += _push_x;
+            _xspd = _push_x; // Match player speed to the heavy push speed
+        } else {
+            _xspd = 0; // Rock is blocked by wall/gate, stop player
+        }
+    }
+
     if (!place_meeting(x + _xspd, y, obj_wall)) {
         x += _xspd;
     } else {
@@ -26,7 +38,19 @@ if (_hmove != 0 || _vmove != 0) {
         }
     }
 
-    // Vertical movement
+    // --- Vertical movement & Rock Pushing ---
+    var _rock_v = instance_place(x, y + _yspd, obj_tutorial_challenge);
+    if (_rock_v != noone) {
+        var _push_y = sign(_yspd) * _rock_v.push_speed;
+        if (!place_meeting(_rock_v.x, _rock_v.y + _push_y, obj_wall) && 
+            !place_meeting(_rock_v.x, _rock_v.y + _push_y, obj_tutorial_gate)) {
+            _rock_v.y += _push_y;
+            _yspd = _push_y; // Match player speed to the heavy push speed
+        } else {
+            _yspd = 0; // Rock is blocked by wall/gate, stop player
+        }
+    }
+
     if (!place_meeting(x, y + _yspd, obj_wall)) {
         y += _yspd;
     } else {
@@ -35,22 +59,21 @@ if (_hmove != 0 || _vmove != 0) {
         }
     }
 
-
     // --- Animation ---
     image_speed = current_speed / 3;   // 1 normally, 1.5 with speed boost
 
-if (_hmove != 0) {
-    // sprite_index = spr_sidewalk;   // add when I have it
-    image_xscale = abs(image_yscale) * sign(_hmove) * -1;   // remove the * -1 if the sprite faces right
-}
-else if (_vmove > 0) {
-    sprite_index = spr_frontwalk;
-    image_xscale = abs(image_yscale);
-}
-else if (_vmove < 0) {
-    // sprite_index = spr_backwalk;   // add when I have it
-    image_xscale = abs(image_yscale);
-}
+    if (_hmove != 0) {
+        // sprite_index = spr_sidewalk;   // add when I have it
+        image_xscale = abs(image_yscale) * sign(_hmove) * -1;   // remove the * -1 if the sprite faces right
+    }
+    else if (_vmove > 0) {
+        sprite_index = spr_frontwalk;
+        image_xscale = abs(image_yscale);
+    }
+    else if (_vmove < 0) {
+        // sprite_index = spr_backwalk;   // add when I have it
+        image_xscale = abs(image_yscale);
+    }
 } else {
     image_speed = 0;
     image_index = 0;

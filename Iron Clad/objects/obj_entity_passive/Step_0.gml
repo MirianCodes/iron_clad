@@ -18,6 +18,15 @@ if (keyboard_check_pressed(ord("E"))) {
     if (distance_to_object(obj_player) < 56 && !is_spared) {
         is_spared = true;
         global.guilt = max(0, global.guilt - 1);
+        
+        // Trigger the spare dialogue box
+        if (!instance_exists(obj_dialogue)) {
+            var _box = instance_create_layer(0, 0, "Instances", obj_dialogue);
+            _box.dialogue_lines = [
+                "* You lower your blade and offer a quiet mercy.",
+                "* The spirit's hostility fades into peaceful silence. Your conscience feels lighter."
+            ];
+        }
     }
 }
 
@@ -36,6 +45,8 @@ switch (state) {
             if (asset_get_index("path_entity_tutorial") != -1) {
                 path_start(path_entity_tutorial, movement_speed, path_action_continue, true);
             }
+        } else {
+            path_speed = movement_speed; // Resumes path movement smoothly after dialogue closes!
         }
         
         if (instance_exists(obj_player) && distance_to_object(obj_player) < aggro_radius) {
