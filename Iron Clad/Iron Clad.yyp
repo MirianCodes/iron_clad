@@ -19,7 +19,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.1.0.27",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Iron Clad",
   "resources":[
@@ -41,6 +41,7 @@
     {"id":{"name":"obj_wheelcheckpointstone","path":"objects/obj_wheelcheckpointstone/obj_wheelcheckpointstone.yy",},},
     {"id":{"name":"path_entity_tutorial","path":"paths/path_entity_tutorial/path_entity_tutorial.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Village","path":"rooms/Village/Village.yy",},},
     {"id":{"name":"winroom","path":"rooms/winroom/winroom.yy",},},
     {"id":{"name":"scr_show_dialogue","path":"scripts/scr_show_dialogue/scr_show_dialogue.yy",},},
     {"id":{"name":"scr_spin_wheel","path":"scripts/scr_spin_wheel/scr_spin_wheel.yy",},},
@@ -57,10 +58,12 @@
     {"id":{"name":"spr_sword","path":"sprites/spr_sword/spr_sword.yy",},},
     {"id":{"name":"spr_ticker","path":"sprites/spr_ticker/spr_ticker.yy",},},
     {"id":{"name":"spr_tutorial_gate","path":"sprites/spr_tutorial_gate/spr_tutorial_gate.yy",},},
+    {"id":{"name":"spr_village","path":"sprites/spr_village/spr_village.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_wasteland","path":"sprites/spr_wasteland/spr_wasteland.yy",},},
     {"id":{"name":"spr_wheel","path":"sprites/spr_wheel/spr_wheel.yy",},},
     {"id":{"name":"spr_wheelcheckpointstone","path":"sprites/spr_wheelcheckpointstone/spr_wheelcheckpointstone.yy",},},
+    {"id":{"name":"village_tile","path":"tilesets/village_tile/village_tile.yy",},},
     {"id":{"name":"wasteland_tile","path":"tilesets/wasteland_tile/wasteland_tile.yy",},},
   ],
   "resourceType":"GMProject",
@@ -68,6 +71,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"winroom","path":"rooms/winroom/winroom.yy",},},
+    {"roomId":{"name":"Village","path":"rooms/Village/Village.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
