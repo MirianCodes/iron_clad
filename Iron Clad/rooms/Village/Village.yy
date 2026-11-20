@@ -41,8 +41,8 @@
   ],
   "name":"Village",
   "parent":{
-    "name":"Iron Clad",
-    "path":"Iron Clad.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
