@@ -7,3 +7,4 @@ global.wheel_used = false;
 global.double_damage_timer = 0; //for powerups
 global.speed_boost_timer = 0;
 global.forced_guilt_timer = 0;
+global.village_intro_seen = false;

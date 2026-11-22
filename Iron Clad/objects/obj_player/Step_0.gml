@@ -103,3 +103,10 @@ if (player_hit_cooldown > 120 - 12) {
 } else {
     image_blend = c_white;
 }
+
+if (!variable_instance_exists(id, "portal_cooldown")) {
+    portal_cooldown = 0;
+}
+if (portal_cooldown > 0) {
+    portal_cooldown--;
+}
