@@ -36,5 +36,5 @@
     "path":"sprites/spr_triggerdot/spr_triggerdot.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
