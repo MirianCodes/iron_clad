@@ -8,11 +8,15 @@ aggro_radius = 160;
 leash_distance = 240;
 state = "patrol";
 chase_timer = 0;
-
 spawn_x = x;
 spawn_y = y;
+return_x = x;
+return_y = y;
 return_speed = movement_speed * 0.8;
+saved_path_pos = 0;
 
-if (asset_get_index("path_entity_tutorial") != -1) {
-    path_start(path_entity_tutorial, movement_speed, path_action_continue, true);
-}
+// Defaults for Room1 tutorial overridden in Village Creation Code
+my_path = asset_get_index("path_entity_tutorial");
+path_end_mode = path_action_continue;
+block_when_spared = false;
+is_blocking_path = false;

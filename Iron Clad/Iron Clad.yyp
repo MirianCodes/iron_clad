@@ -45,6 +45,8 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_wheelcheckpointstone","path":"objects/obj_wheelcheckpointstone/obj_wheelcheckpointstone.yy",},},
     {"id":{"name":"path_entity_tutorial","path":"paths/path_entity_tutorial/path_entity_tutorial.yy",},},
+    {"id":{"name":"path_entity_village1","path":"paths/path_entity_village1/path_entity_village1.yy",},},
+    {"id":{"name":"path_entity_village2","path":"paths/path_entity_village2/path_entity_village2.yy",},},
     {"id":{"name":"rm_cursed_clearing","path":"rooms/rm_cursed_clearing/rm_cursed_clearing.yy",},},
     {"id":{"name":"rm_opening_cutscene","path":"rooms/rm_opening_cutscene/rm_opening_cutscene.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
