@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object24",
+  "%Name":"obj_statue_village",
   "eventList":[],
   "managed":true,
-  "name":"Object24",
+  "name":"obj_statue_village",
   "overriddenProperties":[],
   "parent":{
     "name":"Iron Clad",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_statue_village",
+    "path":"sprites/spr_statue_village/spr_statue_village.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
