@@ -10,8 +10,8 @@
   },
   "defaultScriptType":1,
   "Folders":[
-    {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -20,7 +20,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.1.0.27",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Iron Clad",
   "resources":[
@@ -65,6 +65,7 @@
     {"id":{"name":"spr_beginning_cutscene3","path":"sprites/spr_beginning_cutscene3/spr_beginning_cutscene3.yy",},},
     {"id":{"name":"spr_beginning_cutscene4","path":"sprites/spr_beginning_cutscene4/spr_beginning_cutscene4.yy",},},
     {"id":{"name":"spr_colorWheel","path":"sprites/spr_colorWheel/spr_colorWheel.yy",},},
+    {"id":{"name":"spr_cursed_clearing","path":"sprites/spr_cursed_clearing/spr_cursed_clearing.yy",},},
     {"id":{"name":"spr_dialogue_zone","path":"sprites/spr_dialogue_zone/spr_dialogue_zone.yy",},},
     {"id":{"name":"spr_entity","path":"sprites/spr_entity/spr_entity.yy",},},
     {"id":{"name":"spr_frontwalk","path":"sprites/spr_frontwalk/spr_frontwalk.yy",},},
@@ -90,6 +91,7 @@
     {"id":{"name":"spr_wasteland","path":"sprites/spr_wasteland/spr_wasteland.yy",},},
     {"id":{"name":"spr_wheel","path":"sprites/spr_wheel/spr_wheel.yy",},},
     {"id":{"name":"spr_wheelcheckpointstone","path":"sprites/spr_wheelcheckpointstone/spr_wheelcheckpointstone.yy",},},
+    {"id":{"name":"cursed_tile","path":"tilesets/cursed_tile/cursed_tile.yy",},},
     {"id":{"name":"village_tile","path":"tilesets/village_tile/village_tile.yy",},},
     {"id":{"name":"wasteland_tile","path":"tilesets/wasteland_tile/wasteland_tile.yy",},},
   ],
